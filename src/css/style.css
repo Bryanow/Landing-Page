@@ -1,0 +1,31 @@
+body {
+    background-color: #1a1a1afe;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #0000004d;
+    
+    & h1 {
+        color: #000000;
+        margin-left: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.initial-section {
+    display: flex;
+    width: 100%;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+
+    & .initial-section-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: aqua;
+    }
+}
