@@ -1,31 +1,76 @@
 body {
-    background-color: #1a1a1afe;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../images/wp5029581.jpg');
 }
-header {
+
+.side-menu {
+    width: 80px;
+    height: 100%;
+    padding-left: 1%;
+    background-color: #4e4e4ef0;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 4px #5a006c;
     position: fixed;
-    width: 100%;
-    background-color: #0000004d;
-    
-    & h1 {
-        color: #000000;
-        margin-left: 25px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
-.initial-section {
-    display: flex;
-    width: 100%;
-    background-color: blanchedalmond;
-    align-items: center;
-    justify-content: center;
-    height: 270px;
+.side-menu:hover {
+    transition: 0.2s;
+    width: 300px
 
-    & .initial-section-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-color: aqua;
+} 
+
+.hide-showbar {
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.hide-showbar i {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.hide-showbar i:hover {
+    transition: 0.2s;
+    background-color: #838383f0;
+}
+
+.links {
+    margin-top: 15px;
+    height: 100%;
+    list-style-type: none;
     }
+
+.links li:hover {
+    transition: 0.2s;
+    background-color: #27004d69;
+}
+
+.links li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 4%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.links li .icon i {
+    font-size: 30px;
+}
+
+.links li .txt-link {
+    text-decoration: none;
+    margin-left: 40px;
+    width: 100%;
 }
