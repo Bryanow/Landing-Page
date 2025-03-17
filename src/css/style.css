@@ -25,10 +25,11 @@ body .my-picture {
 }
 
 .side-menu {
+    z-index: 2;
     width: 80px;
     height: 100%;
     padding-left: 1%;
-    background-color: #4e4e4ef0;
+    background-color: #4e4e4e;
     padding: 40px 0 40px 1%;
     box-shadow: 3px 0px 4px #5a006c;
     position: fixed;
@@ -100,9 +101,10 @@ body .my-picture {
     min-height: 100vh;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-top: 30px;
 }
 
-.grid {
+.buttons-grid {
     height: 250px;
     width: 90%;
     display: grid;
@@ -121,8 +123,9 @@ body .my-picture {
 }
 
 .grid-item button {
+    cursor: pointer;
     transition: 0.2s;
-    background-color: #5858587c;
+    background-color: #585858b8;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -143,33 +146,71 @@ body .my-picture {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    width: 600px;
+    height: 60%;
+    width: 50%;
     color: #FFFFFF;
-    right: 55%;
+    right: 60%;
     transform: translateX(40%);
-    top: 10%;
+    top: 9%;
     border: 3px solid #27004d;
-    background-image: url('../images/dark-space-wallpaper-wyofj4xvqyfz8eg4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(#ffffff5c, #00000088, #ffffff5c);
+
 }
 
-.read-notes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+
+.item-list {
     width: 100%;
     height: 100%;
-    background: rgba(34, 34, 35, 0.698); /* Roxo acinzentado com transparência */
-    filter: blur(2px); /* Suaviza o fundo */
-    z-index: 1;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Para garantir que o conteúdo fique acima do overlay */
-.read-notes .content {
-    position: relative;
-    z-index: 2;
+.item-list h2 {
+    width: 100%;
+    padding: 25px 0 0 20px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#290036a2, #00000000);
+    height: 50px;
+}
+
+.text {
+    text-align: justify;
+    overflow-y: scroll;
+    margin: 30px;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+.item-list.hided {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+}
+
+.item-list.selected{
+    opacity: 1;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background: #4f006bc1; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #610084e3; 
 }

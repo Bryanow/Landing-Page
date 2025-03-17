@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="my-picture">
@@ -58,32 +61,54 @@
     </nav>
 
     <section class="box-container">
-        <div class="grid">
+        <div class="buttons-grid">
 
             <div class="grid-item">
-                <button>Quem sou eu?</button>
+                <button id="who-am-i">Quem sou eu?</button>
             </div>
 
             <div class="grid-item">
-                <button>Quem sou eu?</button>
+                <button id="my-history">Minha História</button>
             </div>
 
             <div class="grid-item">
-                <button>Quem sou eu?</button>
+                <button id="my-objective">Meus objetivos</button>
             </div>
 
             <div class="grid-item">
-                <button>Quem sou eu?</button>
+                <button id="what-i-do">Oque eu faço?</button>
             </div>
 
         </div>
     </section>
 
     <section class="read-notes">
-        <div class="content">
-            <h2 class="car-name">Quem sou eu?</h2>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores quos numquam, exercitationem consequuntur quis? Ratione corrupti soluta consequatur deleniti et aut! Consequuntur odio, sequi deleniti architecto accusantium nulla temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, distinctio in expedita laudantium, laboriosam aperiam doloremque rem similique sequi totam fuga cupiditate ducimus veniam impedit. Laudantium, voluptatum vero. Amet, eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores vel dolore cupiditate quasi delectus asperiores, officiis modi minus impedit suscipit voluptatum saepe exercitationem veritatis doloremque id veniam tenetur laboriosam!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus sapiente molestias, rerum a magni laboriosam. Perspiciatis, ullam voluptate sunt earum nobis tempora non officiis ut dignissimos repellat tenetur culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem doloribus iure aspernatur sit ipsa doloremque alias dolorum iste cum. Unde saepe deserunt architecto earum quos maiores officia quia repudiandae!</p>
+        <div class="list">
+
+            <div class="item-list selected hided">
+                <h2 class="title">Quem sou eu?</h2>
+                <p class="text">Sou uma pessoa apaixonada por tecnologia e inovação, sempre em busca de aprender coisas novas. Curioso por natureza, gosto de resolver problemas e transformar ideias em realidade. Acredito que cada desafio é uma oportunidade de crescimento e que o conhecimento nunca tem fim.</p>
+            </div>
+
+            <div class="item-list hided">
+                <h2 class="title">Quem sou eu?</h2>
+                <p class="text">Desde pequeno, sempre fui fascinado por computadores e programação. Meu primeiro contato com o desenvolvimento foi explorando pequenos projetos e, com o tempo, fui me aprofundando em linguagens e frameworks. Hoje, continuo trilhando esse caminho, aprimorando minhas habilidades e buscando novas oportunidades para evoluir.</p>
+            </div>
+
+            <div class="item-list hided">
+                <h2 class="title">Quem sou eu?</h2>
+                <p class="text">Meu principal objetivo é me tornar um desenvolvedor altamente qualificado, capaz de criar soluções eficientes e impactantes. Quero trabalhar em projetos que façam a diferença e contribuir para o crescimento da tecnologia. Além disso, busco constantemente novos desafios para expandir meus conhecimentos e melhorar como profissional.</p>
+            </div>
+
+            <div class="item-list hided">
+                <h2 class="title">Quem sou eu?</h2>
+                <p class="text">Atualmente, estudo e pratico desenvolvimento web, focando em tecnologias como HTML, CSS, JavaScript e WordPress. Estou sempre experimentando novas ferramentas e aprimorando minhas habilidades no design e na criação de interfaces funcionais e intuitivas. Meu objetivo é transformar ideias em experiências digitais incríveis.</p>
+            </div>
+
         </div>
     </section>
+
+    <script src="src/js/index.js">
+    </script>
 </body>
 </html>
