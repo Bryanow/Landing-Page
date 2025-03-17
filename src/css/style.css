@@ -1,7 +1,7 @@
 body {
     height: 100vh;
-    overflow: hidden;
-    background-image: url('../images/ursa-major-ursa-minor-constellations.jpg');
+    overflow: ;
+    background-image: url('../images/wp3493599-black-space-wallpaper-hd.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body .my-picture {
     background-color: #ffffff;
     right: 10%;
     top: 10%;
-    border: 3px solid #27004d;
+    border: 3px solid #001b4d;
 
     & img {
         width: 100%;
@@ -31,7 +31,7 @@ body .my-picture {
     padding-left: 1%;
     background-color: #4e4e4e;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0px 4px #5a006c;
+    box-shadow: 3px 0px 4px #00326c;
     position: fixed;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@ body .my-picture {
 
 .links li:hover {
     transition: 0.2s;
-    background-color: #27004d69;
+    background-color: #00124d69;
 }
 
 .links li a{
@@ -130,14 +130,14 @@ body .my-picture {
     height: 100%;
     border-radius: 10px;
     color: #ffffff;
-    border: 2px solid #27004d;
-    box-shadow: 2px 0 4px #27004d;
+    border: 2px solid #000f4d;
+    box-shadow: 2px 0 4px #00444d;
 }
 
 .grid-item button:hover {
     background-color: #585858;
-    border: 2px solid #27004d;
-    box-shadow: 2px 0 7px #5800b1;
+    border: 2px solid #1900ff;
+    box-shadow: 2px 0 7px #00a5b1;
 
 }
 
@@ -152,7 +152,8 @@ body .my-picture {
     right: 60%;
     transform: translateX(40%);
     top: 9%;
-    border: 3px solid #27004d;
+    border: 3px solid #000f4d;
+    border-radius: 10px;
     background-image: linear-gradient(#ffffff5c, #00000088, #ffffff5c);
 
 }
@@ -178,7 +179,7 @@ body .my-picture {
     padding: 25px 0 0 20px;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#290036a2, #00000000);
+    background-image: linear-gradient(#000e36a2, #00000000);
     height: 50px;
 }
 
@@ -189,6 +190,12 @@ body .my-picture {
     padding: 20px;
     width: 80%;
     height: 80%;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        cursor: pointer;
+        background-color: transparent;
+    }
 }
 
 .item-list.hided {
@@ -202,15 +209,18 @@ body .my-picture {
     z-index: 1;
 }
 
+
+
 ::-webkit-scrollbar {
     width: 10px;
     cursor: pointer;
+    background-color: #252525;
 }
 ::-webkit-scrollbar-thumb {
-  background: #4f006bc1; 
+  background: #00006bc1; 
   cursor: pointer;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #610084e3; 
+    background: #006384e3; 
 }
