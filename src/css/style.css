@@ -110,7 +110,8 @@ body .my-picture {
 .buttons-grid {
     height: 120px;
     width: 750px;
-    margin-left: 157px;
+    right: 60%;
+    transform: translateX(41.6%);
     margin-bottom: 210px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
